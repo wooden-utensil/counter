@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Counter</title>
+	<style>
+.btn {
+	width:30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.inp {
+	width:50px;
+	text-align: center;
+}
+.table {
+	line-height: 20px;
+	text-align: center;
+	margin: auto;
+}
+.center {
+	line-height: 20px;
+	text-align: center;
+	margin-left: auto;
+}
+.center2 {
+	line-height: 5px;
+}
+	</style>
+</head>
+<body>
+	<table class="table">
+		<h2 class="center">Counter</h2>
+		<tr class="center2"><td><input class="inp"></td> <td>:</td> <td><input class="inp"></td></tr>
+		<tr><td><span id="a">0</span></td> <td>:</td> <td><span id="b">0</span></td></tr><tr>
+		<td><button class="btn" onclick="document.getElementById('a').innerText=parseInt(document.getElementById('a').innerText)-1">-</button></td><td>:</td>
+		<td><button class="btn" onclick="document.getElementById('b').innerText=parseInt(document.getElementById('b').innerText)-1">-</button></td></tr><tr>
+		<td><button class="btn" onclick="document.getElementById('a').innerText=parseInt(document.getElementById('a').innerText)+1">+</button></td><td>:</td>
+		<td><button class="btn" onclick="document.getElementById('b').innerText=parseInt(document.getElementById('b').innerText)+1">+</button></td></tr>
+	</table>
+</body>
+</html>
